@@ -1,3 +1,8 @@
 #canvas-demo {
     background-color: #F4F4F4;
+    display: inline;
+}
+
+#centerElements{
+	text-align: center;
 }
