@@ -6,3 +6,8 @@
 #centerElements{
 	text-align: center;
 }
+
+#mycal {
+    background-color: #F4F4F4;
+    display: inline;
+}

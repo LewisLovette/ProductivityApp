@@ -57,12 +57,8 @@ window.onload=function(){
 	//Setting bar sizes;
 	for(var j = 0; j < 7; j++){
 	    for(var i = 0; i < 4; i++){
-	    	if(arr[i][j] == 0){
-	    		barSize = 3;
-	    	}
-	    	else{
-	    		barSize = 20 * arr[i][j];
-	    	}
+
+	    	(arr[i][j] == 0) ? barSize = 3 : barSize = 20 * arr[i][j];
 
 	    	//Setting colors - this would be done dynamically by their 'busiest' day.
 	    	if(arr[i][j] > 5){
@@ -85,6 +81,38 @@ window.onload=function(){
 		y = 0;
 		x += 20;
 	}
-
-
 }
+/**
+ * Initialize with current year and date. Returns reference to plugin object.
+ */
+var jfcalplugin = $("#mycal").jFrontierCal({
+	date: new Date(),
+	dayClickCallback: myDayClickHandler,
+	agendaClickCallback: myAgendaClickHandler,
+	agendaDropCallback: myAgendaDropHandler,
+	dragAndDropEnabled: true
+}).data("plugin");
+/**
+ * Get the date (Date object) of the day that was clicked from the event object
+ */
+function myDayClickHandler(eventObj){
+	var date = eventObj.data.calDayDate;
+	alert("You clicked day " + date.toDateString());
+};
+/**
+ * Get the agenda item that was clicked.
+ */
+function myAgendaClickHandler (eventObj){
+	var agendaId = eventObj.data.agendaId;
+	var agendaItem = jfcalplugin.getAgendaItemById("#mycal",agendaId);
+};
+/**
+ * get the agenda item that was dropped. It's start and end dates will be updated.
+ */
+function myAgendaDropHandler(eventObj){
+	var agendaId = eventObj.data.agendaId;
+	var date = eventObj.data.calDayDate;		
+	var agendaItem = jfcalplugin.getAgendaItemById("#mycal",agendaId);		
+	alert("You dropped agenda item " + agendaItem.title + 
+		" onto " + date.toString() + ". Here is where you can make an AJAX call to update your database.");
+};

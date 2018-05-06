@@ -7,19 +7,357 @@
         <link rel="stylesheet" type="text/css" href="home.css"/>
         <!-- Local Version  <script type="text/javascript" src="/obelisk.js/build/obelisk.min.js"></script> -->
         <script src="http://nosir.github.io/obelisk.js/dist/obelisk.min.1.0.2.js"></script>
+        
+    <!-- Local Version  
+        <script src="js/jquery.js"></script> 
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script>$(function() { alert('jQuery Test') })</script>
+    -->
+
+        <!-- Calander Setup -->
+        <link rel="stylesheet" type="text/css" href="css/frontierCalendar/jquery-frontier-cal-1.3.2.css" />
+        <!-- Include CSS for color picker plugin (Not required for calendar plugin. Used for example.) -->
+        <link rel="stylesheet" type="text/css" href="css/colorpicker/colorpicker.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui/smoothness/jquery-ui-1.8.1.custom.css" />
+        <script type="text/javascript" src="js/jquery-core/jquery-1.4.2-ie-fix.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui/smoothness/jquery-ui-1.8.1.custom.min.js"></script>
+        <!-- Include color picker plugin (Not required for calendar plugin. Used for example.) -->
+        <script type="text/javascript" src="js/colorpicker/colorpicker.js"></script>
+        <!-- Include jquery tooltip plugin (Not required for calendar plugin. Used for example.) -->
+        <script type="text/javascript" src="js/jquery-qtip-1.0.0-rc3140944/jquery.qtip-1.0.js"></script>
+        <!--
+            ** jshashtable-2.1.js MUST BE INCLUDED BEFORE THE FRONTIER CALENDAR PLUGIN. **
+        -->
+        <script type="text/javascript" src="js/lib/jshashtable-2.1.js"></script>
+        <script type="text/javascript" src="js/frontierCalendar/jquery-frontier-cal-1.3.2.min.js"></script>
+        <!-- Calander Setup - End -->
+
+        
 
         <script src="scripts.js" type="text/javascript">
             function();
         </script>
+
     </head>
 
     <body bgcolor="#98AFC7">
+
         <script src="cordova.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
 
         <div id="centerElements">
             <h1 id="title">Productivity App - Very very early stages!</h1>
             <canvas id="canvas-demo" width="300" height="300"></canvas>
+        </div>
+
+
+
+        <div id="mycal" class="JFrontierCal" style="height: 152px;">
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Header-Cell" style="width: 31px;">
+                &nbsp;Sun
+              </div>
+
+              <div class="JFrontierCal-Header-Cell" style="width: 31px;">
+                &nbsp;Mon
+              </div>
+
+              <div class="JFrontierCal-Header-Cell" style="width: 31px;">
+                &nbsp;Tue
+              </div>
+
+              <div class="JFrontierCal-Header-Cell" style="width: 31px;">
+                &nbsp;Wed
+              </div>
+
+              <div class="JFrontierCal-Header-Cell" style="width: 31px;">
+                &nbsp;Thu
+              </div>
+
+              <div class="JFrontierCal-Header-Cell" style="width: 31px;">
+                &nbsp;Fri
+              </div>
+
+              <div class="JFrontierCal-Header-Cell JFrontierCal-Header-Cell-Last" style=
+              "width: 31px;">
+                &nbsp;Sat
+              </div>
+            </div>
+
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Week-Header-Cell JFrontierCal-PrevMonth-Week-Header-Cell"
+              style="width: 31px;">
+                29&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell JFrontierCal-PrevMonth-Week-Header-Cell"
+              style="width: 31px;">
+                30&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                1&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                2&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                3&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                4&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell JFrontierCal-Week-Header-Cell-Last"
+              style="width: 31px;">
+                5&nbsp;
+              </div>
+            </div>
+
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Day-Cell JFrontierCal-PrevMonth-Day-Cell ui-droppable"
+              style="width: 31px; height: 10px;"></div>
+
+              <div class="JFrontierCal-Day-Cell JFrontierCal-PrevMonth-Day-Cell ui-droppable"
+              style="width: 31px; height: 10px;"></div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell JFrontierCal-Day-Cell-Last ui-droppable" style=
+              "width: 31px; height: 10px;"></div>
+            </div>
+
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                6&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                7&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                8&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                9&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                10&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                11&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell JFrontierCal-Week-Header-Cell-Last"
+              style="width: 31px;">
+                12&nbsp;
+              </div>
+            </div>
+
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Day-Cell ui-droppable JFrontierCal-Day-Cell-Today" style=
+              "width: 31px; height: 10px;"></div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable JFrontierCal-Day-Cell-Last" style=
+              "width: 31px; height: 10px;"></div>
+            </div>
+
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                13&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                14&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                15&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                16&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                17&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                18&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell JFrontierCal-Week-Header-Cell-Last"
+              style="width: 31px;">
+                19&nbsp;
+              </div>
+            </div>
+
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable JFrontierCal-Day-Cell-Last" style=
+              "width: 31px; height: 10px;"></div>
+            </div>
+
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                20&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                21&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                22&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                23&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                24&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                25&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell JFrontierCal-Week-Header-Cell-Last"
+              style="width: 31px;">
+                26&nbsp;
+              </div>
+            </div>
+
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable JFrontierCal-Day-Cell-Last" style=
+              "width: 31px; height: 10px;"></div>
+            </div>
+
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                27&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                28&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                29&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                30&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell" style="width: 31px;">
+                31&nbsp;
+              </div>
+
+              <div class="JFrontierCal-Week-Header-Cell JFrontierCal-NextMonth-Week-Header-Cell"
+              style="width: 31px;">
+                1&nbsp;
+              </div>
+
+              <div class=
+              "JFrontierCal-Week-Header-Cell JFrontierCal-NextMonth-Week-Header-Cell JFrontierCal-NextMonth-Week-Header-Cell-Last"
+              style="width: 31px;">
+                2&nbsp;
+              </div>
+            </div>
+
+            <div style="width: 218px;">
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell ui-droppable" style="width: 31px; height: 10px;">
+              </div>
+
+              <div class="JFrontierCal-Day-Cell JFrontierCal-NextMonth-Day-Cell ui-droppable"
+              style="width: 31px; height: 10px;"></div>
+
+              <div class=
+              "JFrontierCal-Day-Cell JFrontierCal-NextMonth-Day-Cell JFrontierCal-NextMonth-Day-Cell-Last ui-droppable"
+              style="width: 31px; height: 10px;"></div>
+            </div>
         </div>
 
     </body>
