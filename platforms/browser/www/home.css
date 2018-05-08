@@ -11,3 +11,53 @@
     background-color: #F4F4F4;
     display: inline;
 }
+
+/* Frontier Calander CSS */
+element.style {
+    width: 30px;
+    height: 7px;
+}
+.JFrontierCal .JFrontierCal-Day-Cell-Last, .JFrontierCal .JFrontierCal-NextMonth-Day-Cell-Last {
+    border-right: 0px solid #ffffff;
+}
+.JFrontierCal .JFrontierCal-Day-Cell, .JFrontierCal .JFrontierCal-Day-Cell-Last {
+    background-color: #efefef;
+    color: #444444;
+    background-image: url(images/dayCellCurrentMonth.png);
+    background-repeat: repeat-y;
+}
+.JFrontierCal .JFrontierCal-Day-Cell, .JFrontierCal .JFrontierCal-Day-Cell-Last,
+.JFrontierCal .JFrontierCal-PrevMonth-Day-Cell, .JFrontierCal .JFrontierCal-NextMonth-Day-Cell,
+.JFrontierCal .JFrontierCal-NextMonth-Day-Cell-Last, .JFrontierCal .JFrontierCal-Day-Cell-Droppable,
+.JFrontierCal .JFrontierCal-Day-Cell-Today {
+    padding: 0px;
+    border-bottom: 0px solid #ffffff;
+    border-left: 0px solid #ffffff;
+    font: 13px verdana;
+    float: left;
+    clear: right;
+    height: 80px;
+    text-align: right;
+}
+/* user agent stylesheet */
+div {
+    display: block;
+}
+.ui-widget-content {
+    border: 1px solid #aaaaaa;
+    background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+    color: #222222;
+}
+.ui-widget-content {
+    border: 1px solid #aaaaaa;
+    background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+    color: #222222;
+}
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+}
+body {
+    font-size: 62.5%;
+}
+/* Frontier Calander CSS End*/

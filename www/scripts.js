@@ -82,6 +82,8 @@ window.onload=function(){
 		x += 20;
 	}
 }
+
+
 /**
  * Initialize with current year and date. Returns reference to plugin object.
  */
@@ -116,3 +118,6 @@ function myAgendaDropHandler(eventObj){
 	alert("You dropped agenda item " + agendaItem.title + 
 		" onto " + date.toString() + ". Here is where you can make an AJAX call to update your database.");
 };
+
+ jfcalplugin.setAspectRatio("#mycal", 0.75);
+
