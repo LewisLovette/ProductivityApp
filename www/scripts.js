@@ -1,8 +1,8 @@
-document.write("Testing Scripts.js Connection")
+//document.write("Testing Scripts.js Connection")
 
+//Bar-chart stuff
 var x = 0;
 var y = 0;
-
 var arr = [
 	[1, 2, 3, 4, 5, 6, 7],
 	[7, 6, 5, 3, 3, 2, 1],
@@ -95,4 +95,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	var elems = document.querySelectorAll('.datepicker');
 	var instances = M.Datepicker.init(elems, options);
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+
+  });
+
 
