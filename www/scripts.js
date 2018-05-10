@@ -1,5 +1,20 @@
 //document.write("Testing Scripts.js Connection")
 
+//Side-nav setup
+document.addEventListener('DOMContentLoaded', function() {
+	var elems = document.querySelectorAll('.sidenav');
+	var instances = M.Sidenav.init(elems, options);
+});
+
+$(document).ready(function(){
+    $(".button-collapse").sideNav();
+    $('.parallax').parallax();
+    $('.modal-trigger').leanModal();
+    $(".dropdown-button").dropdown({
+        hover: false
+    });
+});
+
 //Bar-chart stuff
 var x = 0;
 var y = 0;
@@ -96,11 +111,5 @@ document.addEventListener('DOMContentLoaded', function() {
 	var instances = M.Datepicker.init(elems, options);
 });
 
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-
-  });
 
 

@@ -27,8 +27,12 @@
 		<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
 		<!--Let browser know website is optimized for mobile-->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <!-- Materialize Setup End -->
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	    <!-- Materialize Setup End -->
+
 
     </head>
 
@@ -38,23 +42,28 @@
         
         <nav>Testing the sidenav bar.</nav>
 
-		<ul id="slide-out" class="sidenav">
-		    <li><div class="user-view">
-		    <div class="background">
-			    <img src="images/2.jpg">
-				</div>
-				<a href="#user"><img class="circle" src="images/1.jpg"></a>
-				<a href="#name"><span class="white-text name">John Doe</span></a>
-				<a href="#email"><span class="white-text email">test@gmail.com</span></a>
-		    </div></li>
-		    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-		    <li><a href="#!">Second Link</a></li>
-		    <li><div class="divider"></div></li>
-		    <li><a class="subheader">Subheader</a></li>
-		    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+		<ul id="slide-out" class="side-nav" style="transform: translateX(0px)"> 
+        <li>
+			<li>
+				<div class="user-view">
+					<div class="background">
+				        <img src="images/2.jpg" height="300" width="300">
+					</div>
+						<a href="#user"><img class="circle" src="images/1.jpg" height="42" width="42"></a>
+						<a href="#name"><span class="white-text name">John Doe</span></a>
+						<a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+				</div></li>
+			<li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+			<li><a href="#!">Second Link</a></li>
+			<li><div class="divider"></div></li>
+			<li><a class="subheader">Subheader</a></li>
+			<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+		</li>
 		</ul>
-		<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-		    
+	
+
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>       
+ 
 
 
         <div id="centerElements">
