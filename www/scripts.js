@@ -15,6 +15,11 @@ $(document).ready(function(){
     });
 });
 
+//Date Picker setup
+$(document).ready(function() {
+    $("#datepicker").datepicker();
+});
+
 //Bar-chart stuff
 var x = 0;
 var y = 0;
@@ -97,19 +102,4 @@ window.onload=function(){
 		x += 20;
 	}
 }
-
-//Datepicker stuff
-var $input = $('.datepicker').pickadate()
-
-// Use the picker object directly.
-var picker = $input.pickadate('picker')
-
-picker.set('select', '2018-05-09', { format: 'yyyy-mm-dd' });
-
-document.addEventListener('DOMContentLoaded', function() {
-	var elems = document.querySelectorAll('.datepicker');
-	var instances = M.Datepicker.init(elems, options);
-});
-
-
 
